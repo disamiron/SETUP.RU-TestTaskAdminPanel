@@ -42,7 +42,6 @@ const AddTodo = (props) => {
             <label for="new-user-status">Choose a status:</label>
             <select id="new-user-status" name="status" 
                 onChange={ev => {
-                    console.log(document.getElementById("new-user-status").value);
                     onchangeStatus(document.getElementById("new-user-status").value)
                     }}>
                 <option value="admin">Admin</option>

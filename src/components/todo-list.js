@@ -5,8 +5,6 @@ const TodoList = (props) => {
     const {todos, toggleTodo} = props; //const todos = this.props.todos
 
     function filterStatus (status) {
-        console.log(todos.form.filterAdmin);
-        console.log(status);
         if((todos.form.filterAdmin) && (status=="admin")) {
                 return true
         } else if ((todos.form.filterClient) && (status=="client")) {
